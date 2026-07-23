@@ -36,3 +36,6 @@ go.work.sum
 *.db-journal
 *.sqlite
 *.sqlite3
+
+# Real server config (keep example versioned, not the real one)
+config.yaml
