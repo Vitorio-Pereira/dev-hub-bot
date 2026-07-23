@@ -1,0 +1,98 @@
+version: 1
+
+server:
+  name: "My Dev Hub"
+  description: "Personal hub for tracking projects, career, and resources."
+
+categories:
+  - key: dashboard
+    name: "DASHBOARD"
+    emoji: "📊"
+    channels:
+      - key: status_overview
+        name: "status-overview"
+        type: text
+      - key: board
+        name: "board"
+        type: text
+
+  - key: projects
+    name: "PROJECTS"
+    emoji: "🚀"
+    channels:
+      - key: template
+        name: "_new-project-template"
+        type: text
+
+  - key: career
+    name: "CAREER"
+    emoji: "💼"
+    channels:
+      - key: job_feed
+        name: "job-feed"
+        type: text
+      - key: freelance_proposals
+        name: "freelance-proposals"
+        type: text
+
+  - key: backlog
+    name: "BACKLOG"
+    emoji: "🧠"
+    channels:
+      - key: ideas
+        name: "ideas"
+        type: text
+      - key: studies
+        name: "studies"
+        type: text
+
+  - key: resources
+    name: "RESOURCES"
+    emoji: "📚"
+    channels:
+      - key: topic_one
+        name: "topic-one"
+        type: forum
+        emoji: "🗂️"
+        tags: ["PDF", "Article", "Video", "Tip", "Book"]
+      - key: topic_two
+        name: "topic-two"
+        type: forum
+        emoji: "🗂️"
+        tags: ["PDF", "Article", "Video", "Tip", "Book"]
+
+  - key: bot
+    name: "BOT"
+    emoji: "🤖"
+    channels:
+      - key: bot_logs
+        name: "bot-logs"
+        type: text
+      - key: commands
+        name: "commands"
+        type: text
+
+  - key: archive
+    name: "ARCHIVE"
+    emoji: "📦"
+    channels: []
+
+roles:
+  - key: active
+    name: "🟢 Active"
+    color: "#57F287"
+  - key: paused
+    name: "🟡 Paused"
+    color: "#FEE75C"
+  - key: planned
+    name: "🔵 Planned"
+    color: "#5865F2"
+  - key: blocked
+    name: "🔴 Blocked"
+    color: "#ED4245"
+  - key: done
+    name: "⚪ Done"
+    color: "#B9BBBE"
+  - key: archived
+    name: "📦 Archived"
+    color: "#4F545C"
